@@ -17,7 +17,7 @@ module.exports = {
     /**
      * Generates a timestamped random BigInt.
      *
-     * @param {number} [length = 16] - The length of the underlying Buffer
+     * @param {number} [length = 16] - The length of the underlying Buffer.
      * @returns {BigInt}
      */
     bigInt(length = 16) {
@@ -27,8 +27,8 @@ module.exports = {
     /**
      * Generates the string representation of a timestamped Buffer of random bytes.
      *
-     * @param {BufferEncoding | "decimal"} [encoding = "base64url"] - The character encoding to use
-     * @param {number} [length = 16] - The length of the underlying Buffer
+     * @param {BufferEncoding | "decimal"} [encoding = "base64url"] - The character encoding to use.
+     * @param {number} [length = 16] - The length of the underlying Buffer.
      * @returns {string}
      */
     string(encoding = "base64url", length = 16) {
