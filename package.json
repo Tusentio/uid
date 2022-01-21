@@ -1,0 +1,13 @@
+{
+    "name": "@tusent.io/uid",
+    "version": "1.0.0",
+    "private": true,
+    "homepage": "https://github.com/Tusentio/Uid#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Tusentio/Uid.git"
+    },
+    "license": "UNLICENSED",
+    "author": "Tusentio <contact@tusent.io> (https://www.tusent.io/)",
+    "main": "index.js"
+}
