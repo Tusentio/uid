@@ -11,13 +11,13 @@ module.exports = {
         const len = Math.ceil(length);
         const timeHash = crypto.createHash("md5").update(new Date().toISOString()).digest();
         const halfLen = Math.max(Math.ceil(len / 2), len - timeHash.length);
-        return Buffer.concat([crypto.randomBytes(halfLen), timeHash], halfLen + timeHash.length).subarray(0, len);
+        return Buffer.concat([crypto.randomBytes(halfLen), timeHash], len);
     },
 
     /**
      * Generates a timestamped random BigInt.
      *
-     * @param {number} [length = 16]
+     * @param {number} [length = 16] - The length of the underlying Buffer
      * @returns {BigInt}
      */
     bigInt(length = 16) {
@@ -27,8 +27,8 @@ module.exports = {
     /**
      * Generates the string representation of a timestamped Buffer of random bytes.
      *
-     * @param {BufferEncoding | "decimal"} [encoding = "base64url"]
-     * @param {number} [length = 16]
+     * @param {BufferEncoding | "decimal"} [encoding = "base64url"] - The character encoding to use
+     * @param {number} [length = 16] - The length of the underlying Buffer
      * @returns {string}
      */
     string(encoding = "base64url", length = 16) {
