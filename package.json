@@ -1,16 +1,23 @@
 {
     "name": "@tusent.io/uid",
-    "version": "1.1.0",
-    "homepage": "https://github.com/Tusentio/Uid#readme",
+    "version": "2.0.0",
+    "homepage": "https://github.com/Tusentio/uid#readme",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Tusentio/Uid.git"
+        "url": "git+https://github.com/Tusentio/uid.git"
     },
     "license": "UNLICENSED",
-    "author": "Tusentio <contact@tusent.io> (https://www.tusent.io/)",
+    "author": {
+        "name": "Tusentio",
+        "email": "contact@tusent.io",
+        "url": "https://www.tusent.io/"
+    },
+    "type": "module",
     "main": "index.js",
     "files": [
         "index.js",
-        "uid.js"
+        "index.d.ts",
+        "uid.js",
+        "uid.d.ts"
     ]
 }
