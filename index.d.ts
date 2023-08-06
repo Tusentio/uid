@@ -1,4 +1,4 @@
-import uid from "./uid";
+export * from "./uid";
 
 /**
  * Generate a short base64url-encoded unique ID.
@@ -62,19 +62,3 @@ export function hexMedium(): string;
  * Alias for ``uid.string("hex", 16)``
  */
 export function hexLong(): string;
-
-export default {
-    base64Short,
-    base64Medium,
-    base64Long,
-
-    decimalShort,
-    decimalMedium,
-    decimalLong,
-
-    hexShort,
-    hexMedium,
-    hexLong,
-
-    ...uid,
-};

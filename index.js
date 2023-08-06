@@ -1,4 +1,5 @@
-import uid from "./uid.js";
+import * as uid from "./uid.js";
+export * from "./uid.js";
 
 export function base64Short() {
     return uid.string("base64url", 8);
@@ -35,19 +36,3 @@ export function hexMedium() {
 export function hexLong() {
     return uid.string("hex", 16);
 }
-
-export default {
-    base64Short,
-    base64Medium,
-    base64Long,
-
-    decimalShort,
-    decimalMedium,
-    decimalLong,
-
-    hexShort,
-    hexMedium,
-    hexLong,
-
-    ...uid,
-};

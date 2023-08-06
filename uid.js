@@ -40,12 +40,6 @@ export function string(encoding, length) {
     }
 }
 
-export default {
-    bytes,
-    bigInt,
-    string,
-};
-
 function arrayToBigIntLE(array, offset = 0, length = array.length) {
     const BITS_PER_ELEMENT = BigInt(8 * array.BYTES_PER_ELEMENT);
     const BYTE_MASK = (1n << BITS_PER_ELEMENT) - 1n;
